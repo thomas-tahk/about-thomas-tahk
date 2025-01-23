@@ -1,11 +1,79 @@
-
-img {
-    width: 300px;
-    height: 400px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-#container {
-    width: 700px;
-    height: 800px;
-    margin: 0 auto;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overscroll-behavior: none;
+}
+.bg-img1{
+    background-image: url('src/thomas1.webp');
+}
+.bg-img2{
+    background-image: url('src/thomas2.webp');
+}
+.bg-img3{
+    background-image: url('src/starcraft.webp');
+}
+.bg-img{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+img {
+    width: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+p {
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.scroll-button {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    animation: bounce .3s infinite alternate;
+}
+.flipY {
+    transform: scaleY(-1);
+}
+@keyframes bounce {
+    to { transform: translate3d(0, -2vh, 0);}
+}
+.scroll-button-img {
+    width: 15vh;
+}
+.emptyDiv {
+    margin-top: auto;
+}
+.divider{
+    width: 100%;
+    height: 2vh;
+    background-color: black;
 }
